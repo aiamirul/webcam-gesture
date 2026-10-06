@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-chakra: 'Chakra Petch', sans-serif;
+    --font-jetbrains: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-chakra {
+  font-family: 'Chakra Petch', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom radial knurl and metallic gradients */
+.knob-radial-mesh {
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.12) 0%, rgba(30, 36, 48, 0.8) 45%, rgba(12, 15, 22, 0.98) 80%);
+}
+
+.knob-bezel {
+  background: conic-gradient(
+    from 0deg,
+    #2a3243 0deg,
+    #131722 45deg,
+    #3b455c 90deg,
+    #131722 135deg,
+    #2a3243 180deg,
+    #131722 225deg,
+    #3b455c 270deg,
+    #131722 315deg,
+    #2a3243 360deg
+  );
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 4s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}

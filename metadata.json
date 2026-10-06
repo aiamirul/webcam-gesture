@@ -1,0 +1,10 @@
+{
+  "name": "AuraDial - AI Gesture Rotary Controller",
+  "description": "Real-time webcam hand gesture tracking powered by TensorFlow.js to grab and rotate a 360-degree precision dial for digital volume and screen brightness control.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
